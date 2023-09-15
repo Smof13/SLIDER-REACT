@@ -26,6 +26,7 @@ const PruebasHooks = ( {contador, setContador} ) => {
   return (
     <div style={{display:"flex", flexDirection:"column", alignItems:"center", gap:"20px", background:"#212121", height:"600px"}}>
         <h4 style={{fontSize:"20px", color:"white"}}>{contador}</h4>
+        <img style={{width:"500px", height:"300px", justifyContent:"center", objectFit:"cover", borderRadius:"10%", border: "solid aqua 4px"}} src={img} alt="" />
         <button style={{
           cursor:"pointer",
           background:"#00ffbb",
@@ -47,7 +48,6 @@ const PruebasHooks = ( {contador, setContador} ) => {
           fontWeight: "bold"
           }} onClick={ ()=> setContador( contador + 1 ) }>Derecha</button>
 
-        <img style={{width:"500px", height:"300px", justifyContent:"center", objectFit:"cover", borderRadius:"10%", border: "solid aqua 4px"}} src={img} alt="" />
     </div>
    
   )
